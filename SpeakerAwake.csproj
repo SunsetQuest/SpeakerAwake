@@ -33,8 +33,6 @@
   <ItemGroup>
     <EmbeddedResource Include="Properties\SpeakerAwakeIcon.ico" />
     <EmbeddedResource Include="Properties\SpeakerAwakeIconPaused.ico" />
-    <EmbeddedResource Include="SpeakerAwakeIcon.ico" />
-    <EmbeddedResource Include="SpeakerAwakeIconPaused.ico" />
   </ItemGroup>
 
   <ItemGroup>

@@ -53,7 +53,7 @@ namespace SpeakerAwake
 
             // Frequency menu
             ToolStripMenuItem freqMenu = new("Frequency");
-            int[] freqs = new[] { 5, 10, 15, 20, 30, 50, 100 };
+            int[] freqs = new[] { 2, 5, 10, 15, 20, 30, 50, 100 };
             foreach (int f in freqs)
             {
                 ToolStripMenuItem freqItem = new($"{f} Hz")
@@ -69,7 +69,7 @@ namespace SpeakerAwake
             ToolStripMenuItem volMenu = new("Volume");
             (string Label, float Value)[] vols = new (string Label, float Value)[]
             {
-                ("0.5%", 0.005f),("1%",0.01f),("2%",0.02f),("3%",0.03f),("4%",0.04f),("5%",0.05f),("10%",0.10f)
+                ("0.1%", 0.001f),("0.5%", 0.005f),("1%",0.01f),("2%",0.02f),("3%",0.03f),("4%",0.04f),("5%",0.05f),("10%",0.10f)
             };
             foreach ((string Label, float Value) v in vols)
             {
