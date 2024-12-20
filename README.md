@@ -2,7 +2,13 @@
 
 **Speaker Awake** is a lightweight Windows system tray application that continuously plays a very low-volume, low-frequency sine wave tone to prevent speakers from automatically turning off due to inactivity. This ensures that your audio hardware remains responsive and avoids delays or missing audio fragments when new sounds start playing.
 
+This works well with the Klipsch USB speakers and possibly other brands.
+
 This application was generated with the help of ChatGPT.
+
+![image](https://github.com/user-attachments/assets/a2b3feed-eeb8-4bdb-aec7-32e392904518)
+
+This application has been tested with Klipsch USB speakers and should also work with various other brands and models. Even at extremely low amplitude and frequencies, the tone is generally inaudible, helping maintain your audio system’s readiness without introducing noticeable background noise.
 
 ## Features
 
@@ -39,6 +45,7 @@ This application was generated with the help of ChatGPT.
    - **Volume:** Adjust the volume level.
    - **Exit:** Close the application.
  - Changes to frequency and volume are saved automatically, so they persist between sessions.
+ - Add to your Startup folder to launch with Windows.
 
 ### Custom Icons and Resources
 
@@ -50,6 +57,12 @@ This application was generated with the help of ChatGPT.
  - Since the volume is extremely low, you should not hear the tone under normal conditions. If you do, try lowering the volume or choosing a frequency that is less audible.
  - If your speakers still sleep at the chosen frequency and volume, try adjusting the frequency upwards until it prevents sleep.
  - If the tray icon doesn't appear, ensure that the application isn't blocked by your system or antivirus. Also, double-check .NET dependencies.
+
+## Drawbacks
+- **Increased Power Usage:** Speakers remain powered and ready, potentially increasing electricity consumption compared to letting them sleep.
+- **Minor Resource Utilization:** The application consumes a slight amount of CPU and memory to generate and play the low-level tone.
+- **Potentially Reduced Audio Quality:** Although this is unlikely to be perceptible, injecting even a minor signal into the audio channel could theoretically reduce audio fidelity. Most users, even audiophiles, should find this effect negligible at low amplitude and volume.
+- **Platform Limitation:** Currently, this application is supported on Windows only
 
 ## Credits
 
